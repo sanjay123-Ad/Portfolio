@@ -1,47 +1,40 @@
-# Premium Cinematic Developer Portfolio 🌟
+# Hi there, I'm Sanjay K! 👋
 
-A premium, production-grade personal portfolio built with modern front-end mechanics, designed to showcase engineering capabilities with rich visual aesthetics and smooth motion choreography.
+<p align="left">
+  <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&amp;weight=600&amp;size=26&amp;duration=3500&amp;pause=1000&amp;color=FFCA85&amp;width=450&amp;lines=AI+Engineer;Founder+of+ZOL+AI+Studio;Java+%26+C+Developer" alt="Typing Title" />
+</p>
 
-🔗 **Live Demo:** [sanjay-k-portfolio.vercel.app](https://github.com/sanjay123-Ad) *(Replace with Vercel link once deployed)*
-
----
-
-## 🎨 Design System & Aesthetics
-* **Atmospheric Theme:** Sleek dark mode styled with soft charcoal shades, custom gold highlights, and a drifting ambient starfield canvas.
-* **OpenAI & Stripe Inspired Glassmorphism:** Glass panels built using `backdrop-filter` and soft glowing border accents.
-* **Apple-Inspired Typography:** Space Grotesk headings combined with clean Inter body copy and JetBrains Mono terminal texts.
+I specialize in building autonomous AI integrations, secure relational database architectures in Supabase, and designing interactive Figma interfaces.
 
 ---
 
-## 🚀 Key Features
-1. **Scroll-Responsive Typewriter Title:** The landing hero name (*Kaviya Sanjay*) plays a typewriter animation on load and automatically types itself out again whenever a user scrolls down and returns to the top.
-2. **Talking Video Visualizer:** A cinematic video display card fitted with interactive glassmorphic volume overlays to toggle audio easily.
-3. **Interactive 2D Skills Canvas:** A custom node network map tracking C, Java OOP, Supabase, Figma Design, and AI integration skills. Clicking or hovering over nodes triggers credential logs inside a Jarvis-style HUD panel.
-4. **Scroll Sync Highlight:** The top navigation bar dynamically highlights the active section as you scroll through the page.
-5. **Terminal Contact Form:** A console-style submission panel with automated log printouts tracking submission status.
+### 💻 System Info & Profile
+* 👤 **Subject:** Sanjay K
+* 🚀 **Role:** AI Engineer & Founder of ZOL AI Studio
+* 🎓 **Education:** B.Tech in Artificial Intelligence & Data Science (Sri Sairam Institute of Technology)
+* 📍 **Origin:** Chennai, Tamil Nadu, India
 
 ---
 
-## 🛠️ Technology Stack
-* **Markup & Structure:** Semantic HTML5
-* **Styling & Layout:** CSS Custom Variables, Flexbox, CSS Grid
-* **Smooth Scrolling:** Lenis Scroll Engine
-* **Motion & Effects:** GreenSock Animation Platform (GSAP), ScrollTrigger
-* **Icons:** Lucide Icons library
+### 🛠️ Core Toolchain
+Here are the core languages, databases, design tools, and AI APIs I orchestrate:
+
+| Category | Skills & Tools |
+| :--- | :--- |
+| **Languages** | `C` `Java` `SQL` |
+| **Databases** | `Supabase` `PostgreSQL` `MongoDB` |
+| **Design** | `Figma` `UI/UX Prototyping` `Design Systems` |
+| **AI Systems** | `Prompt Engineering` `OpenAI API` `Claude API` `Gemini API` |
 
 ---
 
-## 📦 Local Installation
-To run this project locally, clone the repository and start a local server:
+### 🚀 Projects & Contributions
+* **[ZOL AI Studio](https://zolstudio.com):** A live production platform with integrated authentication, Stripe billing pipelines, and active user traffic.
+* **1 Published Patent:** Enhanced AI-Powered Security System for Real-Time Face Recognition.
+* **2 Research Papers:** Published and presented internationally on Intelligent AI Traffic Systems and VR-Controlled Robotic Interfaces.
 
-```bash
-# Clone the repository
-git clone https://github.com/sanjay123-Ad/Portfolio.git
+---
 
-# Navigate into the project folder
-cd Portfolio
-
-# Start a simple HTTP server (Python)
-python -m http.server 3000
-```
-Open your browser to `http://localhost:3000` to view the site!
+### 📬 Connect with me
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-FFCA85?style=for-the-badge&logo=linkedin&logoColor=08080a)](https://www.linkedin.com/in/kaviya-sanjay/) 
+[![GitHub](https://img.shields.io/badge/GitHub-08080a?style=for-the-badge&logo=github&logoColor=FFCA85)](https://github.com/sanjay123-Ad)
