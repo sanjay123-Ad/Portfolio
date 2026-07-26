@@ -1,0 +1,228 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 430" width="850" height="430">
+  <defs>
+    <!-- Background Gradient -->
+    <radialGradient id="bgGlow" cx="50%" cy="50%" r="60%">
+      <stop offset="0%" stop-color="#14141e" />
+      <stop offset="100%" stop-color="#08080a" />
+    </radialGradient>
+
+    <!-- Champagne Accent Gradient -->
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffca85" />
+      <stop offset="100%" stop-color="#ffffff" />
+    </linearGradient>
+
+    <!-- Laser Line Gradient -->
+    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="rgba(255, 202, 133, 0)" />
+      <stop offset="15%" stop-color="rgba(255, 202, 133, 0.2)" />
+      <stop offset="50%" stop-color="rgba(255, 202, 133, 1)" />
+      <stop offset="85%" stop-color="rgba(255, 202, 133, 0.2)" />
+      <stop offset="100%" stop-color="rgba(255, 202, 133, 0)" />
+    </linearGradient>
+
+    <!-- Style Declarations for Animations -->
+    <style>
+      .window-bg {
+        fill: #0c0c12;
+        stroke: rgba(255, 202, 133, 0.12);
+        stroke-width: 1.5;
+        rx: 16px;
+      }
+      
+      .terminal-text {
+        font-family: 'JetBrains Mono', 'Fira Code', Monaco, Consolas, monospace;
+        font-size: 13px;
+        fill: #f5f5f7;
+      }
+
+      .text-label {
+        fill: #ffca85;
+        font-weight: bold;
+      }
+
+      .text-muted {
+        fill: #86868b;
+      }
+
+      .text-highlight {
+        fill: #ffffff;
+      }
+
+      /* Laser Scan Animation */
+      @keyframes scanLaser {
+        0%, 100% { transform: translateY(0); opacity: 0.3; }
+        50% { transform: translateY(280px); opacity: 1; }
+      }
+      .laser-line {
+        animation: scanLaser 4s ease-in-out infinite;
+      }
+
+      /* Floating Animation for Visuals */
+      @keyframes floatArt {
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-4px); }
+      }
+      .ascii-avatar {
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 8px;
+        fill: rgba(255, 202, 133, 0.4);
+        line-height: 1.2;
+        animation: floatArt 6s ease-in-out infinite;
+      }
+
+      /* Staggered Typing/Fade-in Animation for Terminal Lines */
+      @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(8px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .line-1 { animation: fadeInUp 0.5s ease-out 0.2s forwards; opacity: 0; }
+      .line-2 { animation: fadeInUp 0.5s ease-out 0.5s forwards; opacity: 0; }
+      .line-3 { animation: fadeInUp 0.5s ease-out 0.8s forwards; opacity: 0; }
+      .line-4 { animation: fadeInUp 0.5s ease-out 1.1s forwards; opacity: 0; }
+      .line-5 { animation: fadeInUp 0.5s ease-out 1.4s forwards; opacity: 0; }
+      .line-6 { animation: fadeInUp 0.5s ease-out 1.7s forwards; opacity: 0; }
+      .line-7 { animation: fadeInUp 0.5s ease-out 2.0s forwards; opacity: 0; }
+      .line-8 { animation: fadeInUp 0.5s ease-out 2.3s forwards; opacity: 0; }
+      .line-9 { animation: fadeInUp 0.5s ease-out 2.6s forwards; opacity: 0; }
+      .line-10 { animation: fadeInUp 0.5s ease-out 2.9s forwards; opacity: 0; }
+      .line-11 { animation: fadeInUp 0.5s ease-out 3.2s forwards; opacity: 0; }
+      .line-12 { animation: fadeInUp 0.5s ease-out 3.5s forwards; opacity: 0; }
+      
+      /* Caret Blink */
+      @keyframes blink {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0; }
+      }
+      .caret {
+        animation: blink 0.9s step-end infinite;
+        fill: #ffca85;
+      }
+    </style>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="100%" height="100%" fill="url(#bgGlow)" rx="20" />
+
+  <!-- Main HUD Window -->
+  <g transform="translate(25, 25)">
+    <!-- Window Outer Shell -->
+    <rect width="800" height="380" class="window-bg" />
+
+    <!-- Window Header -->
+    <path d="M 0,16 A 16,16 0 0 1 16,0 L 784,0 A 16,16 0 0 1 800,16 L 800,40 L 0,40 Z" fill="#08080c" stroke="rgba(255,202,133,0.06)" />
+    
+    <!-- Window Control Buttons -->
+    <circle cx="20" cy="20" r="6" fill="#ff5f56" />
+    <circle cx="40" cy="20" r="6" fill="#ffbd2e" />
+    <circle cx="60" cy="20" r="6" fill="#27c93f" />
+    
+    <!-- Terminal Tab Title -->
+    <text x="400" y="25" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11" fill="#86868b" letter-spacing="1">sanjay123-ad ~ terminal</text>
+
+    <!-- LEFT PANEL: DIGITAL AVATAR VISUALIZER -->
+    <g transform="translate(30, 60)">
+      <!-- Panel Border -->
+      <rect width="320" height="295" fill="#060609" stroke="rgba(255,202,133,0.05)" rx="8" />
+      <text x="15" y="25" font-family="'JetBrains Mono', monospace" font-size="10" fill="#86868b" letter-spacing="0.5">IMAGE.MAP &gt; SCAN_ACTIVE</text>
+      
+      <!-- ASCII Avatar Map -->
+      <g transform="translate(45, 45)">
+        <text xml:space="preserve" class="ascii-avatar">
+          <tspan x="0" dy="1.2em">          ..::#@@@@@@@@@@#::..</tspan>
+          <tspan x="0" dy="1.3em">        .+#@@@@@@@@@@@@@@@@@#+.</tspan>
+          <tspan x="0" dy="1.3em">       :#@@@@@@@@@@@@@@@@@@@@@#:</tspan>
+          <tspan x="0" dy="1.3em">      :#@@@@@@@@@@@@@@@@@@@@@@@#:</tspan>
+          <tspan x="0" dy="1.3em">     .@@@@@@@@@@@@@@@@@@@@@@@@@@@.</tspan>
+          <tspan x="0" dy="1.3em">     +@@@@@@@@@@@@@@@@@@@@@@@@@@@+</tspan>
+          <tspan x="0" dy="1.3em">     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@</tspan>
+          <tspan x="0" dy="1.3em">     @@@@@@@@@@@+#@@@+#@@@@@@@@@@@</tspan>
+          <tspan x="0" dy="1.3em">     @@@@@@@@@#:. @@. .#@@@@@@@@@@</tspan>
+          <tspan x="0" dy="1.3em">     +@@@@@@@@@.  @@  .@@@@@@@@@@+</tspan>
+          <tspan x="0" dy="1.3em">     .@@@@@@@@@@@@@@@@@@@@@@@@@@@.</tspan>
+          <tspan x="0" dy="1.3em">      :#@@@@@@@@#=---=#@@@@@@@@#:</tspan>
+          <tspan x="0" dy="1.3em">       :#@@@@@@@@@@@@@@@@@@@@@#:</tspan>
+          <tspan x="0" dy="1.3em">        .+#@@@@@@@@@@@@@@@@@#+.</tspan>
+          <tspan x="0" dy="1.3em">          ..::#@@@@@@@@@@#::..</tspan>
+        </text>
+      </g>
+
+      <!-- Laser Scanner Sweep Overlay -->
+      <g transform="translate(0, 10)" class="laser-line">
+        <rect width="320" height="2" fill="url(#laserGrad)" />
+        <rect width="320" height="20" fill="url(#laserGrad)" opacity="0.08" y="-10" />
+      </g>
+    </g>
+
+    <!-- RIGHT PANEL: VARIABLE HUD TERMINAL -->
+    <g transform="translate(380, 60)">
+      <!-- Panel Border -->
+      <rect width="390" height="295" fill="#060609" stroke="rgba(255,202,133,0.05)" rx="8" />
+      <text x="20" y="25" font-family="'JetBrains Mono', monospace" font-size="10" fill="#86868b" letter-spacing="0.5">SYSTEM.INFO &gt; profile.sh --view</text>
+      
+      <!-- Terminal Output Content -->
+      <g transform="translate(20, 60)" class="terminal-text">
+        <!-- Profile Variables -->
+        <g class="line-1">
+          <text x="0" y="0" class="text-label">Subject</text>
+          <text x="120" y="0" class="text-highlight">Kaviya Sanjay</text>
+        </g>
+        
+        <g class="line-2" transform="translate(0, 20)">
+          <text x="0" y="0" class="text-label">Role</text>
+          <text x="120" y="0" class="text-highlight">AI Engineer • ZOL AI Studio Founder</text>
+        </g>
+
+        <g class="line-3" transform="translate(0, 40)">
+          <text x="0" y="0" class="text-label">Education</text>
+          <text x="120" y="0" class="text-highlight">B.Tech AI &amp; Data Science (SSIT)</text>
+        </g>
+
+        <g class="line-4" transform="translate(0, 60)">
+          <text x="0" y="0" class="text-label">Origin</text>
+          <text x="120" y="0" class="text-highlight">Chennai, Tamil Nadu, India</text>
+        </g>
+
+        <!-- Skill Grid Rows -->
+        <g class="line-5" transform="translate(0, 90)">
+          <text x="0" y="0" class="text-muted">Core Lang</text>
+          <text x="120" y="0" class="text-highlight">C Language, Java OOP, SQL</text>
+        </g>
+
+        <g class="line-6" transform="translate(0, 110)">
+          <text x="0" y="0" class="text-muted">Core DB</text>
+          <text x="120" y="0" class="text-highlight">Supabase, PostgreSQL, MongoDB</text>
+        </g>
+
+        <g class="line-7" transform="translate(0, 130)">
+          <text x="0" y="0" class="text-muted">Core UI/UX</text>
+          <text x="120" y="0" class="text-highlight">Figma Prototyping, Design Systems</text>
+        </g>
+
+        <g class="line-8" transform="translate(0, 150)">
+          <text x="0" y="0" class="text-muted">AI Toolchain</text>
+          <text x="120" y="0" class="text-highlight">Prompt Crafting, API Orchestrations</text>
+        </g>
+
+        <!-- Links/State -->
+        <g class="line-9" transform="translate(0, 180)">
+          <text x="0" y="0" class="text-muted">Status</text>
+          <text x="120" y="0" class="text-highlight">Actively building production SaaS</text>
+        </g>
+        
+        <g class="line-10" transform="translate(0, 200)">
+          <text x="0" y="0" class="text-label">Contact</text>
+          <text x="120" y="0" class="text-highlight">sanjay123-Ad &gt; LinkedIn / GitHub</text>
+        </g>
+        
+        <!-- Command Prompt Line -->
+        <g class="line-11" transform="translate(0, 225)">
+          <text x="0" y="0" fill="#27c93f">sanjay123-Ad@devos:~$</text>
+          <text x="175" y="0" class="text-highlight">npm run dev</text>
+          <rect x="260" y="-11" width="8" height="13" class="caret" />
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
