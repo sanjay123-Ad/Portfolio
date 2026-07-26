@@ -1,8 +1,10 @@
 # Hi there, I'm Sanjay K! 👋
 
-<p align="left">
+<div align="center">
+  <img src="https://raw.githubusercontent.com/sanjay123-Ad/portfolio/main/Profile_Head_Part.jpeg" alt="Kaviya Sanjay K" width="160" height="160" style="border-radius: 50%; object-fit: cover; border: 3px solid #FFCA85; box-shadow: 0 4px 20px rgba(255, 202, 133, 0.15);" />
+  <br><br>
   <img src="https://readme-typing-svg.demolab.com?font=Space+Grotesk&amp;weight=600&amp;size=26&amp;duration=3500&amp;pause=1000&amp;color=FFCA85&amp;width=450&amp;lines=AI+Engineer;Founder+of+ZOL+AI+Studio;Java+%26+C+Developer" alt="Typing Title" />
-</p>
+</div>
 
 I specialize in building autonomous AI integrations, secure relational database architectures in Supabase, and designing interactive Figma interfaces.
 
