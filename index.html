@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaviya Sanjay | AI Engineer • Founder of ZOL AI Studio • Full-Stack Developer</title>
+    <meta name="description" content="Portfolio of Kaviya Sanjay K, Founder of ZOL AI Studio, AI Engineer, and Full-Stack Developer. Building the future with Artificial Intelligence.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@300;400;500&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=1.20">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Cinematic Intro Loader -->
+    <div class="loader-wrapper" id="loader">
+        <div class="loader-content">
+            <div class="loader-terminal">
+                <div class="loader-branding">
+                    <span class="logo-symbol">&lt;KS /&gt;</span>
+                    <h2 class="loader-title">KAVIYA SANJAY</h2>
+                    <p class="loader-subtitle">ENGINEERING COGNITION</p>
+                </div>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                </div>
+                <div class="loader-percentage" id="loaderPercentage">00%</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Background Particle Canvas -->
+    <canvas id="neuralCanvas" class="neural-canvas"></canvas>
+
+    <!-- Main Navigation Bar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-symbol">&lt;KS /&gt;</span>
+                <span class="logo-text">SANJAY K</span>
+            </a>
+            <nav class="nav-links">
+                <a href="#about" class="nav-item"><span>01.</span>About</a>
+                <a href="#experience" class="nav-item"><span>02.</span>Experience</a>
+                <a href="#skills" class="nav-item"><span>03.</span>Skills</a>
+                <a href="#projects" class="nav-item"><span>04.</span>Projects</a>
+                <a href="#achievements" class="nav-item"><span>05.</span>Credentials</a>
+                <a href="#contact" class="nav-item active-btn">Contact Me</a>
+            </nav>
+            <div class="nav-hamburger" id="navHamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Scroll Container (for Lenis) -->
+    <main class="scroll-container">
+        
+        <!-- SECTION 1: HERO / LANDING -->
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <div class="hero-badge" data-gsap="fade-up">
+                    <span class="pulse-dot"></span>
+                    <span class="badge-text">OPEN TO COLLABORATIONS</span>
+                </div>
+                
+                <h1 class="hero-title" id="typewriterName">
+                    KAVIYA SANJAY
+                </h1>
+                
+                <h2 class="hero-subtitle" data-gsap="fade-up">
+                    AI Engineer • Founder of ZOL AI Studio • Full-Stack Developer
+                </h2>
+
+                <div class="hero-tags" data-gsap="fade-up">
+                    <span class="hero-tag">C / Java</span>
+                    <span class="hero-tag">Supabase DB</span>
+                    <span class="hero-tag">AI Integrations</span>
+                    <span class="hero-tag">Figma Design</span>
+                    <span class="hero-tag">UI/UX Design</span>
+                    <span class="hero-tag">AI Model Handling</span>
+                </div>
+                
+                <p class="hero-desc" data-gsap="fade-up">
+                    Specializing in AI integrations, relational database architectures using Supabase, Figma design systems, and object-oriented application development.
+                </p>
+                
+                <div class="hero-actions" data-gsap="fade-up">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Explore Projects</span>
+                        <i data-lucide="arrow-up-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Get in Touch</span>
+                        <i data-lucide="mail"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Profile Cinematic Video Visualizer -->
+            <div class="hero-visual" data-gsap="fade-in">
+                <div class="cinematic-frame">
+                    <video id="heroVideo" src="Man_talking_about_himself_1080p_202607261308.mp4" autoplay loop muted playsinline class="cinematic-video"></video>
+                    <div class="video-overlay"></div>
+                    <div class="frame-ambient-glow"></div>
+                    <button class="audio-toggle-btn" id="audioToggle" title="Toggle Sound">
+                        <i data-lucide="volume-x" id="audioIcon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <span class="scroll-mouse">
+                    <span class="scroll-wheel"></span>
+                </span>
+                <span class="scroll-text">SCROLL TO EXPLORE</span>
+            </div>
+        </section>
+
+        <!-- SECTION 2: ABOUT / BIO -->
+        <section id="about" class="about-section page-padding">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-num">01.</span>System Profile</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text-content">
+                    <h3 class="about-quote">"We aren't just coding algorithms; we are engineering the cognitive layers of tomorrow."</h3>
+                    <p class="about-paragraph">
+                        I am an AI Engineer and the Founder of <strong class="highlight-cyan">ZOL AI Studio</strong>. I specialize in building autonomous AI agents, intelligent SaaS platforms, and advanced automation pipelines that solve complex enterprise and consumer problems. 
+                    </p>
+                    <p class="about-paragraph">
+                        My background combines academic depth—holding a B.Tech in Artificial Intelligence & Data Science with a CGPA of 8.44—with hands-on production experience. I have built, launched, and monetized micro-SaaS applications from scratch, handling everything from frontend UX design to server architectures, secure payment gateways, and scalable API pipelines.
+                    </p>
+                    <div class="fact-sheet">
+                        <div class="fact-item">
+                            <span class="fact-label">Based In:</span>
+                            <span class="fact-value">Chennai, India</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Focus Area:</span>
+                            <span class="fact-value">LLM Orchestration & AI Products</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Academic:</span>
+                            <span class="fact-value">Sri Sairam Institute of Technology</span>
+                        </div>
+                        <div class="fact-item">
+                            <span class="fact-label">Credentials:</span>
+                            <span class="fact-value">1 Patent, 2 Research Papers</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-stat-cards">
+                    <div class="stat-card glass-panel glow-card">
+                        <div class="stat-icon"><i data-lucide="rocket"></i></div>
+                        <div class="stat-text-group">
+                            <div class="stat-number">ZOL AI</div>
+                            <div class="stat-title">Micro-SaaS Founder</div>
+                            <div class="stat-desc">Live production platform with integrated auth, stripe billing, and active user traffic.</div>
+                        </div>
+                    </div>
+                    
+                    <div class="stat-card glass-panel glow-card">
+                        <div class="stat-icon"><i data-lucide="award"></i></div>
+                        <div class="stat-text-group">
+                            <div class="stat-number">1 Patent</div>
+                            <div class="stat-title">AI Security System</div>
+                            <div class="stat-desc">Published patent focusing on Enhanced AI-Powered Security for Real-Time Face Recognition.</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card glass-panel glow-card">
+                        <div class="stat-icon"><i data-lucide="file-text"></i></div>
+                        <div class="stat-text-group">
+                            <div class="stat-number">2 Papers</div>
+                            <div class="stat-title">Intl. Conferences</div>
+                            <div class="stat-desc">Research publications covering Intelligent AI Traffic Control and VR-Controlled Robotic Interfaces.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: EXPERIENCE -->
+        <section id="experience" class="experience-section page-padding">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-num">02.</span>Experience & Education</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="timeline-container">
+                <!-- Timeline item 1 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - PRESENT</div>
+                    <div class="timeline-body glass-panel">
+                        <div class="timeline-header">
+                            <h3 class="role-title">Founder & Software Engineer</h3>
+                            <h4 class="company-name"><a href="https://zolstudio.com" target="_blank" class="link-hover">ZOL AI Studio <i data-lucide="external-link"></i></a></h4>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Conceived, designed, and launched a production-grade AI-powered Micro-SaaS platform (<a href="https://zolstudio.com" target="_blank">zolstudio.com</a>) supporting active user traffic.</li>
+                            <li>Designed user interfaces in Figma, translating visual layouts into responsive frontends connected to Supabase.</li>
+                            <li>Engineered backend database tables, triggers, and relational schemas in Supabase and SQL.</li>
+                            <li>Developed server-side application logic using Java and C, integrating custom prompt handlers for AI model engines.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline item 2 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2025 - PRESENT</div>
+                    <div class="timeline-body glass-panel">
+                        <div class="timeline-header">
+                            <h3 class="role-title">AI Engineer Intern</h3>
+                            <h4 class="company-name">AUTOINTELLI</h4>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Optimized large-scale database administration and backend server architectures for automation workflows.</li>
+                            <li>Designed logic routing models and scalable microservice layers for high-throughput execution engines.</li>
+                            <li>Assisted in database optimizations, API integration tests, and workflow scripts for analytics layers.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Timeline item 3 -->
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-date">2022 - 2026</div>
+                    <div class="timeline-body glass-panel">
+                        <div class="timeline-header">
+                            <h3 class="role-title">B.Tech in Artificial Intelligence & Data Science</h3>
+                            <h4 class="company-name">Sri Sairam Institute of Technology</h4>
+                        </div>
+                        <ul class="timeline-details">
+                            <li>Acquired strong foundational expertise in Machine Learning, Statistical Analysis, Neural Networks, and Data Structures.</li>
+                            <li>Maintained an outstanding academic CGPA of 8.44 / 10.00.</li>
+                            <li>Represented the institution in national hackathons and successfully published academic papers and patent designs during studies.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: SKILLS (NEURAL NET VISUALIZER) -->
+        <section id="skills" class="skills-section page-padding">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-num">03.</span>Skills Network</h2>
+                <div class="section-line"></div>
+            </div>
+            
+            <div class="skills-layout">
+                <div class="skills-info">
+                    <h3 class="skills-subtitle">Technological Matrix</h3>
+                    <p class="skills-desc">
+                        My skill set focuses on object-oriented software engineering, relational database integrations with Supabase, visual assets design in Figma, and custom workflows for handling AI engines.
+                    </p>
+                    
+                    <div class="skills-legend-container">
+                        <div class="skills-category-group">
+                            <h4 class="category-title">Core Languages</h4>
+                            <div class="tech-tags">
+                                <span class="tag tag-lang">C Language</span>
+                                <span class="tag tag-lang">Java OOP</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-category-group">
+                            <h4 class="category-title">AI & Generative Systems</h4>
+                            <div class="tech-tags">
+                                <span class="tag tag-ai">AI Model Handling</span>
+                                <span class="tag tag-ai">OpenAI API</span>
+                                <span class="tag tag-ai">Gemini API</span>
+                                <span class="tag tag-ai">AI Integrations</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-category-group">
+                            <h4 class="category-title">Databases & Cloud</h4>
+                            <div class="tech-tags">
+                                <span class="tag tag-web">Supabase</span>
+                                <span class="tag tag-web">SQL DB</span>
+                                <span class="tag tag-web">MongoDB</span>
+                                <span class="tag tag-dev">Git / GitHub</span>
+                            </div>
+                        </div>
+
+                        <div class="skills-category-group">
+                            <h4 class="category-title">UI/UX Figma Design</h4>
+                            <div class="tech-tags">
+                                <span class="tag tag-design" style="border-color: rgba(255, 202, 133, 0.3); color: var(--color-primary); background: rgba(255, 202, 133, 0.04);">Figma Design</span>
+                                <span class="tag tag-design" style="border-color: rgba(255, 202, 133, 0.3); color: var(--color-primary); background: rgba(255, 202, 133, 0.04);">UI/UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interactive Neural Network Skill Canvas -->
+                <div class="skills-canvas-container">
+                    <canvas id="skillsNetCanvas"></canvas>
+                    <div class="skills-hud-overlay">
+                        <span class="hud-box-corner tl"></span>
+                        <span class="hud-box-corner tr"></span>
+                        <span class="hud-box-corner bl"></span>
+                        <span class="hud-box-corner br"></span>
+                        <div class="skills-hud-text">
+                            <div class="hud-node-title" id="hudNodeTitle">SELECT NODE</div>
+                            <div class="hud-node-data" id="hudNodeData">Hover over network nodes to inspect credentials.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 5: PROJECTS -->
+        <section id="projects" class="projects-section page-padding">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-num">04.</span>Featured Projects</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <!-- Project 1: ZOL AI (Main Feature) -->
+            <div class="featured-project glass-panel">
+                <div class="fp-visual">
+                    <img src="ZOL AI logo.jpeg" alt="ZOL AI Studio Logo" class="fp-project-img">
+                </div>
+                <div class="fp-content">
+                    <span class="fp-badge">CORE PRODUCT & SAAS</span>
+                    <h3 class="fp-title">ZOL AI Studio</h3>
+                    <p class="fp-desc">
+                        A production-ready AI-powered Micro-SaaS application launched and managed entirely from scratch. Integrated full-stack architecture featuring custom LLM routing APIs, user dashboard dashboards, stripe billing systems, authentication modules, and user permission hierarchies.
+                    </p>
+                    <div class="fp-tech">
+                        <span>Next.js</span>
+                        <span>Node.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
+                        <span>Stripe</span>
+                        <span>LLM APIs</span>
+                    </div>
+                    <div class="fp-actions">
+                        <a href="https://zolstudio.com" target="_blank" class="btn btn-primary">
+                            <span>Launch Live SaaS</span>
+                            <i data-lucide="external-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Other Projects Grid -->
+            <div class="projects-grid">
+                <!-- Project 2 -->
+                <div class="project-card glass-panel glow-card">
+                    <div class="pc-header">
+                        <i data-lucide="message-square" class="pc-icon"></i>
+                        <div class="pc-links">
+                            <a href="https://github.com/sanjay123-Ad" target="_blank"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">AI Multi-Modal Chat Application</h3>
+                    <p class="pc-desc">
+                        A robust, ChatGPT-style chat client built to support multi-modal features like document parsing, image analysis, and dynamic programming execution. Implemented model switching (Claude, OpenAI) and local database conversation history caching.
+                    </p>
+                    <div class="pc-tech">
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>OpenAI API</span>
+                        <span>Supabase</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel glow-card">
+                    <div class="pc-header">
+                        <i data-lucide="image" class="pc-icon"></i>
+                        <div class="pc-links">
+                            <a href="https://github.com/sanjay123-Ad" target="_blank"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">YouTube AI Thumbnail Generator</h3>
+                    <p class="pc-desc">
+                        An intelligent Micro-SaaS that analyzes user video transcripts and designs eye-catching, high-CTR thumbnails using stable diffusion models. Optimized queue handling and serverless image storage.
+                    </p>
+                    <div class="pc-tech">
+                        <span>Next.js</span>
+                        <span>Replicate API</span>
+                        <span>Tailwind CSS</span>
+                        <span>Node.js</span>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="project-card glass-panel glow-card">
+                    <div class="pc-header">
+                        <i data-lucide="eye" class="pc-icon"></i>
+                        <div class="pc-links">
+                            <a href="https://github.com/sanjay123-Ad" target="_blank"><i data-lucide="github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="pc-title">Facial Expression Recognition System</h3>
+                    <p class="pc-desc">
+                        A smart camera baby monitoring solution using deep convolutional networks to identify facial expressions (crying, sleeping, active) combined with automated sensor metrics reporting. Sends notifications for distress detection.
+                    </p>
+                    <div class="pc-tech">
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>PyTorch</span>
+                        <span>Twilio API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- SECTION 6: SERVICES -->
+        <section id="services" class="services-section page-padding">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-num">05.</span>Services & Capabilities</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="services-wrapper">
+                <div class="services-terminal glass-panel">
+                    <div class="st-tabs">
+                        <div class="st-tab active" data-service="ai-handlers">AI Model Handling</div>
+                        <div class="st-tab" data-service="figma">Figma UI/UX</div>
+                        <div class="st-tab" data-service="supabase">Database & Supabase</div>
+                        <div class="st-tab" data-service="integrations">API Integrations</div>
+                    </div>
+                    <div class="st-body">
+                        <div class="st-content active" id="srv-ai-handlers">
+                            <div class="srv-desc-block">
+                                <h3 class="srv-title">AI Model Handling & Workflows</h3>
+                                <p class="srv-para">
+                                    I engineer custom instruction profiles and data formatting loops that connect to generative AI model systems.
+                                </p>
+                                <ul class="srv-bullets">
+                                    <li><i data-lucide="check" class="bullet-check"></i> Prompt templates design with custom instructions and guidelines.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Structured JSON request/response schema configurations.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Error checking and validation functions to verify model payloads.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="st-content" id="srv-figma">
+                            <div class="srv-desc-block">
+                                <h3 class="srv-title">UI/UX & Figma Design Systems</h3>
+                                <p class="srv-para">
+                                    Crafting premium user experiences, responsive layouts, and interactive wireframes inside Figma design systems.
+                                </p>
+                                <ul class="srv-bullets">
+                                    <li><i data-lucide="check" class="bullet-check"></i> High-fidelity layout drafts and visual component planning.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Component states, typography rules, and responsive design mockups.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Interactive click-through prototypes mapped to user journeys.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="st-content" id="srv-supabase">
+                            <div class="srv-desc-block">
+                                <h3 class="srv-title">Supabase & Database Administration</h3>
+                                <p class="srv-para">
+                                    Designing secure user authorization tables, database schemas, foreign key structures, and procedure triggers.
+                                </p>
+                                <ul class="srv-bullets">
+                                    <li><i data-lucide="check" class="bullet-check"></i> Relational database tables planning and indexing for low query latency.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Row-Level Security (RLS) rules ensuring absolute user data privacy.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Supabase authentication flows integrated with user profiles.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="st-content" id="srv-integrations">
+                            <div class="srv-desc-block">
+                                <h3 class="srv-title">Sleek AI API Integrations</h3>
+                                <p class="srv-para">
+                                    Connecting large language model APIs (OpenAI, Claude, Gemini) into application logic routines using clean C or Java structures.
+                                </p>
+                                <ul class="srv-bullets">
+                                    <li><i data-lucide="check" class="bullet-check"></i> Payload formatting, payload dispatching, and response parsing routines.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Prompt tuning and token count optimization to control costs.</li>
+                                    <li><i data-lucide="check" class="bullet-check"></i> Modular classes to isolate API integrations from core systems.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 7: CREDENTIALS (PATENT & PAPERS) -->
+        <section id="achievements" class="achievements-section page-padding">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-num">06.</span>Research & Credentials</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="credentials-grid">
+                <!-- Patent Card -->
+                <div class="credential-card glass-panel glow-card-red">
+                    <div class="cred-header">
+                        <div class="cred-badge badge-red">PATENT</div>
+                        <i data-lucide="lock" class="cred-icon red-icon"></i>
+                    </div>
+                    <h3 class="cred-title">Enhanced AI-Powered Security System for Real-Time Face Recognition</h3>
+                    <p class="cred-desc">
+                        A published research patent outlining a proprietary architecture for low-latency facial identification, optimizing neural layers to prevent spoofing and run efficiently on edge-computing cameras.
+                    </p>
+                    <div class="cred-footer">
+                        <span class="cred-status">Status: Published</span>
+                        <span class="cred-tech">Computer Vision / PyTorch</span>
+                    </div>
+                </div>
+
+                <!-- Paper Card 1 -->
+                <div class="credential-card glass-panel glow-card">
+                    <div class="cred-header">
+                        <div class="cred-badge">RESEARCH PAPER</div>
+                        <i data-lucide="file-text" class="cred-icon"></i>
+                    </div>
+                    <h3 class="cred-title">AI Traffic Management & Congestion Optimization Systems</h3>
+                    <p class="cred-desc">
+                        Co-authored and presented a paper at an International Conference, detailing custom ML routing strategies to dynamically adjust traffic light delays in response to real-time density sensors.
+                    </p>
+                    <div class="cred-footer">
+                        <span class="cred-status">Presented Internationally</span>
+                        <span class="cred-tech">Deep Q-Learning</span>
+                    </div>
+                </div>
+
+                <!-- Paper Card 2 -->
+                <div class="credential-card glass-panel glow-card">
+                    <div class="cred-header">
+                        <div class="cred-badge">RESEARCH PAPER</div>
+                        <i data-lucide="cpu" class="cred-icon"></i>
+                    </div>
+                    <h3 class="cred-title">Virtual Reality Controlled Multi-Degree Robot Arm Interfaces</h3>
+                    <p class="cred-desc">
+                        Co-authored and presented a paper at an International Conference, analyzing real-time positional data syncing from VR sensors to physical mechanical arm models over low-latency WebSockets.
+                    </p>
+                    <div class="cred-footer">
+                        <span class="cred-status">Presented Internationally</span>
+                        <span class="cred-tech">WebSockets / Unity / IoT</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="academic-row glass-panel">
+                <div class="acad-item">
+                    <div class="acad-title">Sri Sairam Institute of Technology</div>
+                    <div class="acad-desc">B.Tech in Artificial Intelligence & Data Science (GPA: 8.44/10)</div>
+                </div>
+                <div class="acad-item">
+                    <div class="acad-title">National Programme on Technology Enhanced Learning</div>
+                    <div class="acad-desc">Certifications in Python for Data Science, Design Thinking, and Human Computer Interfaces</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 8: CONTACT -->
+        <section id="contact" class="contact-section page-padding">
+            <div class="section-header">
+                <h2 class="section-title"><span class="section-num">07.</span>Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h3 class="contact-tagline">Let's build the future together.</h3>
+                    <p class="contact-text">
+                        I am currently available for startups, freelance projects, technical consulting, and collaborative AI products. If you are looking to build something that feels premium and relies on state-of-the-art AI, open a communications channel below.
+                    </p>
+                    
+                    <div class="contact-checklist">
+                        <div class="chk-item"><i data-lucide="check" class="chk-icon"></i> AI Projects & Agent Workflows</div>
+                        <div class="chk-item"><i data-lucide="check" class="chk-icon"></i> Custom Full-Stack SaaS Platforms</div>
+                        <div class="chk-item"><i data-lucide="check" class="chk-icon"></i> Technical Consultations & API Optimization</div>
+                        <div class="chk-item"><i data-lucide="check" class="chk-icon"></i> Full-Time AI Engineering Roles</div>
+                    </div>
+
+                    <div class="social-channels">
+                        <a href="mailto:sanjayroyal585858@gmail.com" class="social-btn" title="Email Kaviya">
+                            <i data-lucide="mail"></i>
+                            <span>sanjayroyal585858@gmail.com</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/kaviya-sanjay/" target="_blank" class="social-btn" title="LinkedIn Profile">
+                            <i data-lucide="linkedin"></i>
+                            <span>linkedin.com/in/kaviya-sanjay</span>
+                        </a>
+                        <a href="https://github.com/sanjay123-Ad" target="_blank" class="social-btn" title="GitHub Repository">
+                            <i data-lucide="github"></i>
+                            <span>github.com/sanjay123-Ad</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Sleek Cinematic Contact Form -->
+                <div class="contact-form-container glass-panel">
+                    <div class="terminal-bar">
+                        <h3 class="form-title" style="margin-left: 0; font-family: var(--font-heading); font-size: 14px; font-weight: 600; color: var(--color-text-primary); letter-spacing: 0.5px;">Send a Message</h3>
+                    </div>
+                    <div class="terminal-body" id="contactTerminal" style="padding: 30px;">
+                        <form id="handshakeForm" class="handshake-form" action="javascript:void(0);">
+                            <div class="form-fields-wrapper show-fields" id="formFields">
+                                <div class="form-field">
+                                    <label for="visitorName" style="text-transform: none; font-weight: 500; font-family: var(--font-body); font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px;">Your Name</label>
+                                    <input type="text" id="visitorName" required placeholder="e.g. John Doe" class="term-input" style="border-radius: 6px; padding: 12px 16px; background: rgba(255,255,255,0.02); border: 1px solid var(--color-border); font-family: var(--font-body); font-size: 13px;">
+                                </div>
+                                <div class="form-field">
+                                    <label for="visitorEmail" style="text-transform: none; font-weight: 500; font-family: var(--font-body); font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px;">Email Address</label>
+                                    <input type="email" id="visitorEmail" required placeholder="e.g. john@example.com" class="term-input" style="border-radius: 6px; padding: 12px 16px; background: rgba(255,255,255,0.02); border: 1px solid var(--color-border); font-family: var(--font-body); font-size: 13px;">
+                                </div>
+                                <div class="form-field">
+                                    <label for="visitorSubject" style="text-transform: none; font-weight: 500; font-family: var(--font-body); font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px;">Subject</label>
+                                    <input type="text" id="visitorSubject" required placeholder="e.g. AI SaaS Project Partnership" class="term-input" style="border-radius: 6px; padding: 12px 16px; background: rgba(255,255,255,0.02); border: 1px solid var(--color-border); font-family: var(--font-body); font-size: 13px;">
+                                </div>
+                                <div class="form-field">
+                                    <label for="visitorMessage" style="text-transform: none; font-weight: 500; font-family: var(--font-body); font-size: 12px; color: var(--color-text-secondary); margin-bottom: 4px;">Your Message</label>
+                                    <textarea id="visitorMessage" required placeholder="Describe your vision or inquiry..." class="term-input text-area" style="border-radius: 6px; padding: 12px 16px; background: rgba(255,255,255,0.02); border: 1px solid var(--color-border); font-family: var(--font-body); font-size: 13px; min-height: 120px;"></textarea>
+                                </div>
+                                <button type="submit" class="terminal-submit-btn" style="border-radius: 6px; border: 1px solid var(--color-primary); background: transparent; color: var(--color-primary); padding: 12px 24px; font-family: var(--font-heading); font-weight: 500; font-size: 13px; align-self: flex-start; transition: var(--transition-fast); display: flex; align-items: center; gap: 8px;">
+                                    <span>Send Message</span>
+                                    <i data-lucide="send" style="width: 16px; height: 16px;"></i>
+                                </button>
+                                <div class="form-status-log" id="formStatusLog" style="font-family: var(--font-body); font-size: 13px; margin-top: 12px; transition: opacity 0.3s; opacity: 0;"></div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="main-footer">
+            <div class="footer-container">
+                <p class="copyright">© 2026 KAVIYA SANJAY K. ALL RIGHTS RESERVED.</p>
+                <div class="footer-links">
+                    <a href="https://github.com/sanjay123-Ad" target="_blank" class="footer-link">GITHUB</a>
+                    <a href="https://www.linkedin.com/in/kaviya-sanjay/" target="_blank" class="footer-link">LINKEDIN</a>
+                    <a href="https://zolstudio.com" target="_blank" class="footer-link">ZOL AI STUDIO</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- GSAP and Lenis CDN Script Loading -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- unpkg Lenis for smooth scroll -->
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+    
+    <!-- Custom JS logic -->
+    <script src="app.js?v=1.20"></script>
+</body>
+</html>

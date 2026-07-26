@@ -1,0 +1,11 @@
+{
+  "name": "sanjay-portfolio",
+  "version": "1.0.0",
+  "description": "Kaviya Sanjay's cyber-aesthetic personal portfolio",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx -y http-server -p 3000"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
