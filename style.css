@@ -1754,3 +1754,10 @@ body {
     from, to { color: transparent }
     50% { color: var(--color-primary) }
 }
+
+/* 14. NAVBAR PROFILE AVATAR HOVER EFFECTS */
+.nav-avatar:hover {
+    transform: scale(1.15);
+    border-color: var(--color-primary) !important;
+    box-shadow: 0 0 12px rgba(var(--color-primary-rgb), 0.35);
+}
